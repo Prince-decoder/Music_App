@@ -16,11 +16,13 @@ import androidx.navigation.compose.composable
 fun Navigation(navcontroller: NavController, viewModel: MainViewModel, modifier: PaddingValues)
 {
     NavHost(navController = navcontroller as NavHostController,
-        startDestination = Screens.DrawerScreen.Account.Route)
+        startDestination = Screens.BottomScreen.Home.bRoute)
     {
 
         composable(Screens.BottomScreen.Home.bRoute)
-        {  }
+        {
+            Homepage(Modifier.padding(modifier))
+        }
         composable(Screens.BottomScreen.Library.bRoute)
         {  }
         composable(Screens.BottomScreen.Browse.bRoute)

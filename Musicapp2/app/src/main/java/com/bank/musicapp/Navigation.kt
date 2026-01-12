@@ -24,9 +24,13 @@ fun Navigation(navcontroller: NavController, viewModel: MainViewModel, modifier:
             Homepage(Modifier.padding(modifier))
         }
         composable(Screens.BottomScreen.Library.bRoute)
-        {  }
+        {
+            LibPage(Modifier.padding(modifier))
+        }
         composable(Screens.BottomScreen.Browse.bRoute)
-        {  }
+        {
+            BrowsePage(modifier = Modifier.padding(modifier))
+        }
 
         composable(Screens.DrawerScreen.Account.Route)
         {
